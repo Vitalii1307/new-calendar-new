@@ -19,27 +19,6 @@ AWS_REGION = 'us-east-1'
 LOG_GROUP_NAME = 'django-app-logs'
 
 
-'''LOGGING = { 
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'cloudwatch': {
-            'level': 'INFO',
-            'class': 'watchtower.CloudWatchLogHandler',
-            'boto3_session': Session(region_name=AWS_REGION),
-            'log_group': LOG_GROUP_NAME,
-            'stream_name': f"django-{os.environ.get('HOSTNAME', 'local')}-{datetime.datetime.now().strftime('%Y%m%d-%H%M%S')}",
-        },
-    },
-    'loggers': {
-        'django': {
-            'handlers': ['cloudwatch'],
-            'level': 'INFO',
-            'propagate': True,
-        },
-    },
-}'''
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
