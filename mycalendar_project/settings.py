@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'calendarapp',
     'rest_framework',
-]
+] 
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
